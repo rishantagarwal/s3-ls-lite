@@ -1,13 +1,13 @@
 var lodashMap = require("lodash.map")
 var lodashTrimStart = require("lodash.trimstart")
 var lodashTrimEnd = require("lodash.trimend")
+var S3 = require("aws-sdk/clients/s3")
 var assert = require("assert")
 
 module.exports = function(options) {
   assert(options && typeof options.bucket === "string")
   var bucket = options.bucket
-  var s3 =
-    options.s3 || new (require("aws-sdk")).S3({ apiVersion: "2006-03-01" })
+  var s3 = options.s3 || new S3({ apiVersion: "2006-03-01" })
 
   return {
     ls: function ls(path) {
