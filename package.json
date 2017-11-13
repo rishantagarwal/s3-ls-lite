@@ -1,0 +1,34 @@
+{
+  "name": "s3-ls-light",
+  "version": "1.0.0",
+  "description": "List contents of an S3 bucket 'folder'",
+  "main": "index.js",
+  "bin": {
+    "s3-ls": "./bin/s3-ls"
+  },
+  "scripts": {
+    "test": "tape test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rishantagarwal/s3-ls-light.git"
+  },
+  "keywords": ["aws", "s3", "list", "listobjects", "folder", "file"],
+  "author": "rishantagarwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rishantagarwal/s3-ls-light/issues"
+  },
+  "homepage": "https://github.com/rishantagarwal/s3-ls-light",
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "proxyquire": "^1.7.10",
+    "tape": "^4.6.2"
+  },
+  "dependencies": {
+    "aws-sdk": ">=2.3.0 <3.0.0",
+    "lodash.map": "^4.6.0",
+    "lodash.trimend": "^4.5.1",
+    "lodash.trimstart": "^4.5.1"
+  }
+}
