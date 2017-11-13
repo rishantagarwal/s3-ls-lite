@@ -2,7 +2,7 @@
 List contents of an S3 bucket 'folder'. Node.js module and command line executable.
 s3-ls-lite is a lighter version of s3-ls with exactly same API's
 
-#Comparison
+# Comparison
 ![Comparison between s3-ls and s3-ls-lite](/comparison.png)
 
 
