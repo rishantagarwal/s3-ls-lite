@@ -24,10 +24,10 @@ lister.ls('/my-folder/subfolder/')
 
 The `s3ls` accepts two options:
 * `bucket` - Obligatory. The S3 bucket name
-* `s3` - Optional. The `aws-sdk` S3 class instance. For example: `new AWS.S3({apiVersion: '2006-03-01'})` 
+* `s3` - Optional. The `aws-sdk` S3 class instance. For example: `new AWS.S3({apiVersion: '2006-03-01'})`
 
 The `s3ls.ls(path)` function takes:
-* `path` - any string. E.g. 
+* `path` - any string. E.g.
   *  `"/"`, `""`, or
   * `"/folder"`, `"folder/"`, `"folder"`, or
   * `"/1/2/3/4"`, `"1/2/3/4/"`, `"1/2/3/4"`, etc.
@@ -51,15 +51,5 @@ f1/
 f2/
 new folder/
 funny-cat-gifs-001.gif
-$ 
+$
 ```
-
-# CHANGELOG
-
-## v1.0
-* Node callbacks interface. No Promises. See README [here](https://github.com/koresar/s3-ls/tree/v1.0.1).
-* The optional `aws-sdk` dependency version was `>=2.0.0 <3.0.0`.
-
-## v2.0
-* Only promises are supported now. For node callbacks use `s3ls.ls(path).then(r => cb(null, r), cb)`
-* The optional `aws-sdk` dependency version is `>=2.3.0 <3.0.0` now.
