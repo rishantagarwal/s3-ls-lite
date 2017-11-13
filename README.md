@@ -1,14 +1,14 @@
-# s3-ls [![Build Status](https://travis-ci.org/koresar/s3-ls.svg?branch=master)](https://travis-ci.org/koresar/s3-ls)
+# s3-ls-lite
 List contents of an S3 bucket 'folder'. Node.js module and command line executable.
 
 # Install
 ```sh
-npm i -S s3-ls
+npm i -S s3-ls-lite
 ```
 
 # Usage
 ```js
-var s3ls = require('s3-ls');
+var s3ls = require('s3-ls-lite');
 
 var lister = s3ls({bucket: 'my-bucket-name'});
 
@@ -36,17 +36,17 @@ The `s3ls.ls(path)` function takes:
 
 ## Install
 ```sh
-$ npm i -g s3-ls
+$ npm i -g s3-ls-lite
 ```
 
 Usage:
 ```
-s3-ls BUCKET [PATH]
+s3-ls-lite BUCKET [PATH]
 ```
 
 Example
 ```sh
-$ s3-ls my-bucket-name my-folder/subfolder/
+$ s3-ls-lite my-bucket-name my-folder/subfolder/
 f1/
 f2/
 new folder/
